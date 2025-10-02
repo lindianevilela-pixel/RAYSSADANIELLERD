@@ -1,10 +1,10 @@
-// Espera o DOM carregar
+/// Espera o DOM carregar
 document.addEventListener("DOMContentLoaded", function() {
 
   // ====== MENU MOBILE ======
   const menuToggle = document.getElementById("menuToggle");
   const mobileMenu = document.getElementById("mobileMenu");
-  const closeMenu = document.getElementById("closeMenu");
+  const closeMenu = mobileMenu.querySelector(".close-btn"); // CORRIGIDO
   const links = mobileMenu.querySelectorAll("a");
 
   // Abrir menu
