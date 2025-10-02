@@ -129,6 +129,29 @@
   #mobileMenu li { margin: 20px 0; }
   #mobileMenu a { color: #f5dcdc; text-decoration: none; font-weight: bold; font-size: 18px; }
   #mobileMenu a:hover { color: #070603; }
+/* botão hamburger padrão (mobile) */
+.hamburger {
+  display: inline-block;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #a51b1b;
+  cursor: pointer;
+  z-index: 1200;
+}
+
+/* esconder hamburger em telas ≥ 768px */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none; /* aqui escondemos o hamburger em desktop */
+  }
+
+  /* opcional: mostrar nav desktop caso estivesse escondido em mobile */
+  .nav-desktopcus {
+    display: flex;
+    gap: 20px;
+  }
+}
 
   /* Hero content */
   .hero-content {
@@ -224,3 +247,4 @@
     color:#fff;
     cursor:pointer;
   }
+
