@@ -118,6 +118,9 @@
     display: flex;
     gap: 20px;
   }
+@media (min-width: 768px) {
+  #menuToggle { display: none; }
+  .nav-desktopcus { display: flex; gap: 20px; }
 }
 
 /* MENU MOBILE */
@@ -262,6 +265,7 @@
     color:#fff;
     cursor:pointer;
   }
+
 
 
 
