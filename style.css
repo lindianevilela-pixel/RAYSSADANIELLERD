@@ -57,35 +57,38 @@
     text-align: right;
   }
 
-  /* HEADER MAIOR E CENTRALIZADO */
+  /* HEADER FLUTUANTE TRANSPARENTE E MAIOR */
 header.container-fluid {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;                 /* ocupa toda a largura */
-  max-width: 1200px;           /* limite para não ficar esticado demais */
+  left: 0;
+  width: 100%;                   /* ocupa toda a largura */
   display: flex;
-  justify-content: space-between; /* logo de um lado e menu do outro */
-  align-items: center;
-  padding: 25px 60px;          /* aumenta altura */
-  background: rgba(255,255,255,0.15);
-  border-radius: 12px;
+  justify-content: space-between; /* logo à esquerda, menu à direita */
+  align-items: center;           /* centraliza verticalmente */
+  padding: 20px 60px;            /* aumenta altura */
+  background: rgba(255, 255, 255, 0.1); /* transparência */
+  border-radius: 0 0 12px 12px;
   z-index: 1100;
   transition: background 0.3s, padding 0.3s;
 }
-  .logo img, .logo1 img {
-    height: 80px;
-  }
 header.container-fluid:hover {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.85);
+}
+
+/* LOGO */
+.logo img {
+  height: 90px;   /* aumenta o tamanho */
 }
 
 /* LINKS DO MENU DESKTOP */
+.nav-desktopcus {
+  display: flex;
+  gap: 50px;          /* espaço entre os itens */
+}
 .nav-desktopcus a {
   font-weight: bold;
-  font-size: 22px;          /* maior tamanho da fonte */
-  margin: 0 25px;           /* espaçamento lateral */
+  font-size: 22px;    /* maior */
   color: #a51b1b;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -95,15 +98,9 @@ header.container-fluid:hover {
   transform: translateY(-2px);
 }
 
-/* CONTAINER DOS LINKS */
-.nav-desktopcus {
-  display: flex;
-  gap: 40px;
-}
-
-/* BOTÃO HAMBURGER */
+/* BOTÃO HAMBURGER (ESCONDIDO NO DESKTOP) */
 #menuToggle {
-  display: none;            /* escondido por padrão no desktop */
+  display: none;
   font-size: 2rem;
   background: none;
   border: none;
@@ -115,13 +112,12 @@ header.container-fluid:hover {
 /* --- RESPONSIVIDADE --- */
 @media (max-width: 767px) {
   .nav-desktopcus {
-    display: none;          /* esconde menu desktop no mobile */
+    display: none;        /* esconde menu desktop */
   }
   #menuToggle {
-    display: inline-block;  /* mostra hamburger */
+    display: inline-block; /* mostra hamburger */
   }
 }
-
 
 /* MENU MOBILE */
 #mobileMenu {
@@ -265,6 +261,7 @@ header.container-fluid:hover {
     color:#fff;
     cursor:pointer;
   }
+
 
 
 
