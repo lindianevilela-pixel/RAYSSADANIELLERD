@@ -97,7 +97,7 @@
 /* mostrar nav desktop caso estivesse escondida */
   .nav-desktopcus {
     display: flex;
-    gap: 20px;
+    gap: 40px;
   }
 
   /* BOTÃO HAMBURGER */
@@ -121,7 +121,7 @@
   
 @media (min-width: 768px) {
   #menuToggle { display: none; }
-  .nav-desktopcus { display: flex; gap: 40px; }
+  .nav-desktopcus { display: flex; gap: 20px; }
 }
 
 /* MENU MOBILE */
@@ -266,6 +266,7 @@
     color:#fff;
     cursor:pointer;
   }
+
 
 
 
