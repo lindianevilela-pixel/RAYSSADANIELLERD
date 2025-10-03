@@ -85,14 +85,19 @@
   .nav-desktopcus a, .nav-desktopm a {
     font-weight: bold;
     font-size: 20px;
-    margin: 20px;
+    margin: 25px;
     color: #a51b1b;
     text-decoration: none;
     transition: all 0.3s;
   }
-  .nav-desktop a:hover {
+  .nav-desktopcup a:hover {
     color: #007bff;
     transform: translateY(-2px);
+  }
+/* mostrar nav desktop caso estivesse escondida */
+  .nav-desktopcus {
+    display: flex;
+    gap: 20px;
   }
 
   /* BOTÃO HAMBURGER */
@@ -261,6 +266,7 @@
     color:#fff;
     cursor:pointer;
   }
+
 
 
 
