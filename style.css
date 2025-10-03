@@ -113,11 +113,7 @@
     display: none;
   }
 
-  /* mostrar nav desktop caso estivesse escondida */
-  .nav-desktopcus {
-    display: flex;
-    gap: 20px;
-  }
+  
 @media (min-width: 768px) {
   #menuToggle { display: none; }
   .nav-desktopcus { display: flex; gap: 20px; }
@@ -265,6 +261,7 @@
     color:#fff;
     cursor:pointer;
   }
+
 
 
 
