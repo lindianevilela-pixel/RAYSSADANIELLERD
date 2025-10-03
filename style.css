@@ -74,6 +74,9 @@ header.container-fluid {
   z-index: 1100;
   transition: background 0.3s, padding 0.3s;
 }
+  .logo img, .logo1 img {
+    height: 80px;
+  }
 header.container-fluid:hover {
   background: rgba(255,255,255,0.9);
 }
@@ -262,6 +265,7 @@ header.container-fluid:hover {
     color:#fff;
     cursor:pointer;
   }
+
 
 
 
