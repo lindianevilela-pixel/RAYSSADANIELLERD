@@ -16,6 +16,23 @@
     color: #fff;
     overflow: hidden;
   }
+/* Hero Section */
+  .heroeu {
+    width: 100%;
+    height: 100vh;
+    background-image: url("fotot.jpeg");
+    background-size: contain; /* melhor ajuste */
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+  }
+
 
   /* Hero Section Sobre mim */
   .hero2 {
@@ -263,6 +280,7 @@ header.container-fluid:hover {
     color:#fff;
     cursor:pointer;
   }
+
 
 
 
