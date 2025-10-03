@@ -23,14 +23,9 @@
     background-size: cover;   /* ocupa toda a tela */
     background-position: top; /* foca no topo da imagem */
   }
-}
 
-/* Para celulares muito pequenos */
-@media (max-width: 480px) {
-  .hero {
-    height: 70vh;             /* reduz a altura pra não ficar exagerado */
-  }
-}
+
+
   /* Hero Section Sobre mim */
   .hero2 {
     position: relative;
@@ -274,6 +269,7 @@ header.container-fluid:hover {
     color:#fff;
     cursor:pointer;
   }
+
 
 
 
