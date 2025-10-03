@@ -125,7 +125,7 @@ header.container-fluid:hover {
   top: 0;
   right: -100%;
   background-color: #db1515;
-  padding: 20px;
+  padding: 10px;
   transition: right 0.3s ease-in-out;
   z-index: 1150;
   border-radius: 10px 0 0 10px;
@@ -261,6 +261,7 @@ header.container-fluid:hover {
     color:#fff;
     cursor:pointer;
   }
+
 
 
 
