@@ -24,12 +24,13 @@
     background-size: contain; /* melhor ajuste */
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    color: #FFFFFF;
+    color: #fff;
     overflow: hidden;
   }
 
@@ -280,6 +281,7 @@ header.container-fluid:hover {
     color:#fff;
     cursor:pointer;
   }
+
 
 
 
