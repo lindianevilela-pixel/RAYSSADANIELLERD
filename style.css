@@ -23,7 +23,7 @@
     background-size: contain; /* melhor ajuste */
     background-repeat: no-repeat;
     background-position: center;
-    backround-color:#F0FFFF
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,6 +280,7 @@ header.container-fluid:hover {
     color:#fff;
     cursor:pointer;
   }
+
 
 
 
