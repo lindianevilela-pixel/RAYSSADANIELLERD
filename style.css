@@ -29,7 +29,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    color: #fff;
+    color: #FFFFFF;
     overflow: hidden;
   }
 
@@ -280,6 +280,7 @@ header.container-fluid:hover {
     color:#fff;
     cursor:pointer;
   }
+
 
 
 
