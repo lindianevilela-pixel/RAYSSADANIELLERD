@@ -280,6 +280,65 @@ header.container-fluid:hover {
     color:#fff;
     cursor:pointer;
   }
+/*AGENDA3*/
+  /*agenda tipo 2*/
+.agenda2 {
+  min-height: 100vh; /* garante que ocupe no mínimo 100% da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 120px 20px 40px; /* topo, lateral e inferior */
+  color: rgb(8, 8, 8);
+  background-color: #050505;
+   overflow: visible; /* permite que o conteúdo cresça */
+}
+
+
+.agenda2 h1 {
+  font-size: 2 rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fafa0a;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  margin-bottom: 1 px; /* antes: 5px */
+  animation: slideLeft 1s ease-out;
+}
+
+.agenda2 p {
+  font-size: 1 rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #f1f1f1;
+  margin-bottom: 5 px; /* antes: 30px */
+  animation: slideRight 1s ease-out;
+}
+
+
+/* 🔹 Responsividade */
+@media (max-width: 768px) {
+  .agenda2 h1 {
+    font-size: 2rem;
+  }
+
+  .agenda2 p {
+    font-size: 1.1rem;
+  }
+}
+
+/* 🔸 Animações */
+@keyframes slideLeft {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideRight {
+  0% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+      /*fim*/
 
 
 
