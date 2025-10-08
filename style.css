@@ -1,89 +1,91 @@
 
-/* Hero Section */
-  .hero {
-    width: 100%;
-    height: 100vh;
-    background-image: url("Imagens/Fotoperfilq.PNG");
-    background-size: contain; /* melhor ajuste */
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: #fff;
-    overflow: hidden;
-  }
-/* Hero Section */
-  .heroeu {
-    width: 100%;
-    height: 100vh;
-    background-image: url("fotot.jpeg");
-    background-size: contain; /* melhor ajuste */
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: #fff;
-    overflow: hidden;
-  }
+/* =======================
+   🔹 HERO SECTIONS
+======================= */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("Imagens/Fotoperfilq.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
 
+.heroeu {
+  width: 100%;
+  height: 100vh;
+  background-image: url("fotot.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
 
-  /* Hero Section Sobre mim */
-  .hero2 {
-    position: relative;
-    min-height: 100vh;
-    background: url("Imagens/logo.png") no-repeat center center;
-    background-size: contain;
-    background-color: #000;
-    color: #0a0a0a;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: right;
-    padding: 40px 20px;
-  }
+/* HERO SOBRE MIM */
+.hero2 {
+  position: relative;
+  min-height: 100vh;
+  background: url("Imagens/logo.png") no-repeat center center;
+  background-size: contain;
+  background-color: #000;
+  color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  padding: 40px 20px;
+}
 
-  .sobre-content {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-  }
+.sobre-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
 
-  .sobre-content img {
-    max-width: 220px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.6);
-  }
+.sobre-content img {
+  max-width: 220px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
 
-  .sobre-content h2 {
-    color: #d4af37;
-    margin-bottom: 20px;
-  }
+.sobre-content h2 {
+  color: #d4af37;
+  margin-bottom: 20px;
+}
 
-  .sobre-content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    text-align: right;
-  }
+.sobre-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: right;
+}
 
- /* HEADER FLUTUANTE TRANSPARENTE E MAIOR */
+/* =======================
+   🔹 HEADER TRANSPARENTE
+======================= */
 header.container-fluid {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;                   /* ocupa toda a largura */
+  width: 100%;
   display: flex;
-  justify-content: space-between; /* logo à esquerda, menu à direita */
-  align-items: center;           /* centraliza verticalmente */
-  padding: 20px 60px;            /* aumenta altura */
-  background: rgba(255, 255, 255, 0.1); /* transparência */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 0 0 12px 12px;
   z-index: 1100;
   transition: background 0.3s, padding 0.3s;
@@ -94,17 +96,17 @@ header.container-fluid:hover {
 
 /* LOGO */
 .logo img {
-  height: 90px;   /* aumenta o tamanho */
+  height: 90px;
 }
 
-/* LINKS DO MENU DESKTOP */
+/* MENU DESKTOP */
 .nav-desktopcus {
   display: flex;
-  gap: 50px;          /* espaço entre os itens */
+  gap: 50px;
 }
 .nav-desktopcus a {
   font-weight: bold;
-  font-size: 22px;    /* maior */
+  font-size: 22px;
   color: #a51b1b;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -114,7 +116,9 @@ header.container-fluid:hover {
   transform: translateY(-2px);
 }
 
-/* BOTÃO HAMBURGER (ESCONDIDO NO DESKTOP) */
+/* =======================
+   🔹 MENU MOBILE
+======================= */
 #menuToggle {
   display: none;
   font-size: 2rem;
@@ -125,26 +129,20 @@ header.container-fluid:hover {
   z-index: 1200;
 }
 
-/* --- RESPONSIVIDADE --- */
 @media (max-width: 767px) {
   .nav-desktopcus {
-    display: none;        /* esconde menu desktop */
+    display: none;
   }
   #menuToggle {
-    display: inline-block; /* mostra hamburger */
+    display: inline-block;
   }
 }
 
-
-
-/* MENU MOBILE */
 #mobileMenu {
   position: fixed;
   top: 0;
   right: -100%;
   background-color: #db1515;
-  padding: 20px;
-  padding: 10px;
   transition: right 0.3s ease-in-out;
   z-index: 1150;
   border-radius: 10px 0 0 10px;
@@ -152,10 +150,12 @@ header.container-fluid:hover {
   max-width: 300px;
   height: 100vh;
   overflow-y: auto;
+  padding: 20px;
 }
 #mobileMenu.active {
   right: 0;
 }
+
 #mobileMenu .close-btn {
   background: none;
   border: none;
@@ -185,149 +185,150 @@ header.container-fluid:hover {
   color: #070603;
 }
 
+/* =======================
+   🔹 HERO CONTENT
+======================= */
+.hero-content {
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+.hero-content h1 { font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem; }
+.hero-content p { font-size: 1.2rem; }
 
-  /* Hero content */
-  .hero-content {
-    text-align: center;
-    z-index: 1;
-    color: #fff;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-  }
-  .hero-content h1 { font-size: 2.5rem; font-weight: bold; margin-bottom: 0.5rem; }
-  .hero-content p { font-size: 1.2rem; }
+/* =======================
+   🔹 GALERIA
+======================= */
+.galeria {
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+  background-image: url("Imagens/logo1.jpg");
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: 300px 300px;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
 
-  /* Galeria */
-  .galeria {
-    width: 100%;
-    padding: 40px 20px;
-    text-align: center;
-    background-image: url("Imagens/logo1.jpg");
-    background-repeat: repeat;
-    background-position: top left;
-    background-size: 300px 300px;
-    color: #fff;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-  }
+.galeria h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
 
-  .galeria h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel img {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+.seta-esquerda { left: 10px; }
+.seta-direita { right: 10px; }
+.seta:hover { background: rgba(0,0,0,0.8); }
 
-  .carousel-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  .carousel img {
-    flex: 0 0 auto;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 0 10px;
-    cursor: pointer;
-  }
-  .seta {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.6);
-    color: #fff;
-    border: none;
-    font-size: 2rem;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 10;
-  }
-  .seta-esquerda { left: 10px; }
-  .seta-direita { right: 10px; }
-  .seta:hover { background: rgba(0,0,0,0.8); }
+/* LIGHTBOX */
+.lightbox {
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.8);
+  justify-content:center;
+  align-items:center;
+  z-index:1200;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+}
+.lightbox .fechar {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  color:#fff;
+  cursor:pointer;
+}
 
-  /* Lightbox */
-  .lightbox {
-    display: none;
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.8);
-    justify-content:center;
-    align-items:center;
-    z-index:1200;
-  }
-  .lightbox img {
-    max-width: 90%; /* melhor para mobile */
-    max-height: 80%;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #000;
-  }
-  .lightbox .fechar {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 30px;
-    color:#fff;
-    cursor:pointer;
-  }
-/*AGENDA3*/
-  /*agenda tipo 2*/
+/* =======================
+   🔹 AGENDA
+======================= */
 .agenda2 {
-  min-height: 100vh; /* garante que ocupe no mínimo 100% da tela */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 120px 20px 40px; /* topo, lateral e inferior */
-  color: rgb(8, 8, 8);
+  padding: 120px 20px 40px;
+  color: #f1f1f1;
   background-color: #050505;
-   overflow: visible; /* permite que o conteúdo cresça */
+  overflow: visible;
 }
 
-
 .agenda2 h1 {
-  font-size: 2 rem;
+  font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
   color: #fafa0a;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
-  margin-bottom: 1 px; /* antes: 5px */
+  margin-bottom: 5px;
   animation: slideLeft 1s ease-out;
 }
 
 .agenda2 p {
-  font-size: 1 rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 1px;
   color: #f1f1f1;
-  margin-bottom: 5 px; /* antes: 30px */
+  margin-bottom: 30px;
   animation: slideRight 1s ease-out;
 }
 
-
-/* 🔹 Responsividade */
 @media (max-width: 768px) {
   .agenda2 h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
-
   .agenda2 p {
     font-size: 1.1rem;
   }
 }
 
-/* 🔸 Animações */
+/* ANIMAÇÕES */
 @keyframes slideLeft {
   0% { transform: translateX(-100%); opacity: 0; }
   100% { transform: translateX(0); opacity: 1; }
@@ -338,7 +339,6 @@ header.container-fluid:hover {
   100% { transform: translateX(0); opacity: 1; }
 }
 
-      /*fim*/
 
 
 
